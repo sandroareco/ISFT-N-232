@@ -1,0 +1,19 @@
+<div class="w-full min-h-96 mt-[52px] relative">
+  <swiper-container class="mySwiper" navigation="true" space-between="0"
+  centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="false" [speed]="1500">
+    <swiper-slide *ngFor="let slide of slides">
+      <div class="w-full h-96 bg-cover bg-center bg-no-repeat transition-all duration-300">
+        <img [src]="slide.url" class="w-full h-full object-cover slider-image" alt="Slide Image">
+      </div>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="absolute left-0 right-0 bottom-0 mx-auto py-5 text-center w-full bg-black bg-opacity-75">
+          <a [routerLink]="['/noticia', slide.route]">
+            <p class="text-white text-2xl my-0 mx-2 cursor-pointer transition">
+              {{ slide.description }}
+            </p>
+          </a>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
