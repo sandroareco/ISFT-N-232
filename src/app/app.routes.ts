@@ -7,35 +7,35 @@ export const routes: Routes = [
     },
     {
         path: 'ingreso',
-        loadComponent: () => import('./business/ingreso/ingreso.component')
+        loadComponent: () => import('./features/ingreso/ingreso.component')
     },
     {
         path: 'alumnos',
-        loadComponent: () => import('./business/alumnos/alumnos.component')
+        loadComponent: () => import('./features/alumnos/alumnos.component')
     },
     {
-        path: 'desarrolloDeSoftware',
-        loadComponent: () => import('./business/tecnicaturas/desarrollo-de-software/desarrollo-de-software.component')
+        path: 'desarrollodesoftware',
+        loadComponent: () => import('./features/tecnicaturas/desarrollo-de-software/desarrollo-de-software.component')
     },
     {
-        path: 'seguridadEHigiene',
-        loadComponent: () => import('./business/tecnicaturas/seguridad-e-higiene/seguridad-e-higiene.component')
+        path: 'seguridadehigiene',
+        loadComponent: () => import('./features/tecnicaturas/seguridad-e-higiene/seguridad-e-higiene.component')
     },
     {
-        path: 'diseñoProductosMecanicos',
-        loadComponent: () => import('./business/tecnicaturas/productos-mecanicos/productos-mecanicos.component')
+        path: 'diseñoproductosmecanicos',
+        loadComponent: () => import('./features/tecnicaturas/productos-mecanicos/productos-mecanicos.component')
     },
     {
         path: 'biblioteca',
-        loadComponent: () => import('./business/biblioteca/biblioteca.component')
+        loadComponent: () => import('./features/biblioteca/biblioteca.component')
     },
     {
-        path: 'noticia/noticiaUno',
-        loadComponent: () => import('./business/notice/notice-one/notice-one.component')
+        path: 'noticias/primeros-graduados',
+        loadComponent: () => import('./features/notice/notice-one/notice-one.component')
     },
     {
-        path: 'noticia/noticiaDos',
-        loadComponent: () => import('./business/notice/notice-two/notice-two.component')
+        path: 'noticias/unidad-integral',
+        loadComponent: () => import('./features/notice/notice-two/notice-two.component')
     },
     {
         path: 'noticia/noticiaCooperadora',
@@ -50,7 +50,7 @@ export const routes: Routes = [
         loadComponent: () => import('./shared/component/main/notice-main-three/notice-main-three.component')
     },
     {
-        path: 'noticia/noticiaKiosco',
+        path: 'noticia/final-cursada-2023',
         loadComponent: () => import('./shared/component/main/notice-main-four/notice-main-four.component')
     },
     {

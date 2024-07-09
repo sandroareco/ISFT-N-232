@@ -16,16 +16,16 @@ export default class LayoutComponent {
 
   slides: any[] = [
     {
-      url: '/assets/ISFT232.jpeg',
+      url: '/assets/primeros_gradu.webp',
       title: 'First slide',
-      description: 'This is the first slide',
-      route: 'noticiaUno'
+      description: '¡Celebramos a nuestros primeros graduados y graduadas!',
+      route: 'primeros-graduados'
     },
     {
-      url: '/assets/programacion.png',
+      url: '/assets/unidad_integral.webp',
       title: 'Second slide',
-      description: 'This is the second slide',
-      route: 'noticiaDos'
+      description: 'Inauguración de la unidad integral',
+      route: 'unidad-integral'
     }
   ];
 
@@ -49,10 +49,12 @@ export default class LayoutComponent {
       route:'noticiaCarreras'
     },
     {
-      url: '/assets/programacion.png',
-      title: 'Novedades sobre el nuevo kiosco',
-      description: 'Novedades sobre la atencion y los horarios del kiosco',
-      route:'noticiaKiosco'
+      url: '/assets/final_cursada_2023.webp',
+      title: 'Final de la cursada 2023',
+      description: `Con motivo de la culminación de la cursada de los primeros egresados de nuestro instituto los estudiantes decidieron realizar su propia despedida con todos sus compañeros, 
+      esto fue posible gracias a la ayuda de la cooperadora y de los estudiantes, 
+      ya que la propuesta fue que los estudiantes de 2do año prepararan la comida de la despedida.`,
+      route:'final-cursada-2023'
     }
   ];
 
