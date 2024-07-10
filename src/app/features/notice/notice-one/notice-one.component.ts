@@ -44,7 +44,7 @@ export default class NoticeOneComponent implements OnInit {
 
   footer: any[] = [
     {
-      url : '../assets/Logo232.png'
+      url : '../assets/Logo232.webp'
     }
   ];
 

@@ -31,19 +31,19 @@ export default class LayoutComponent {
 
   notice: any[] = [
     {
-      url: '/assets/ISFT232.jpeg',
+      url: '/assets/ISFT232.webp',
       title: 'Novedades de cooperadora',
       description: 'Novedades sobre el trabajo realizado de la cooperadora',
       route:'noticiaCooperadora'
     },
     {
-      url: '/assets/programacion.png',
+      url: '/assets/ISFT232.webp',
       title: 'Novedades de la biblioteca',
       description: 'Novedades sobre la nueva biblioteca',
       route:'noticiaBiblioteca'
     },
     {
-      url: '/assets/ISFT232.jpeg',
+      url: '/assets/ISFT232.webp',
       title: 'Novedades de las nuevas carreras',
       description: 'Informate sobre las nuevas carreras de este 2024',
       route:'noticiaCarreras'
@@ -60,7 +60,7 @@ export default class LayoutComponent {
 
   footer: any[] = [
     {
-      url : '/assets/Logo232.png'
+      url : '/assets/Logo232.webp'
     }
   ];
 }

@@ -27,7 +27,7 @@ export default class NoticeMainFourComponent {
 
   footer: any[] = [
     {
-      url : '../assets/Logo232.png'
+      url : '../assets/Logo232.webp'
     }
   ];
 

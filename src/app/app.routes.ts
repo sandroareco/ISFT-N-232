@@ -14,15 +14,15 @@ export const routes: Routes = [
         loadComponent: () => import('./features/alumnos/alumnos.component')
     },
     {
-        path: 'desarrollodesoftware',
+        path: 'desarrollo-de-software',
         loadComponent: () => import('./features/tecnicaturas/desarrollo-de-software/desarrollo-de-software.component')
     },
     {
-        path: 'seguridadehigiene',
+        path: 'seguridad-e-higiene',
         loadComponent: () => import('./features/tecnicaturas/seguridad-e-higiene/seguridad-e-higiene.component')
     },
     {
-        path: 'diseñoproductosmecanicos',
+        path: 'diseño-productos-mecanicos',
         loadComponent: () => import('./features/tecnicaturas/productos-mecanicos/productos-mecanicos.component')
     },
     {

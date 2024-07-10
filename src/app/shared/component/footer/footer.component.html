@@ -3,10 +3,12 @@
         <iframe src="https://www.google.com/maps/d/embed?mid=1DAOaFFoG4hh9h5vq0HeIUxwODrOYDXw&ehbc=2E312F&noprof=1" width="750" height="220"></iframe>
     </div>
     <div class="flex mt-6">
-        <div *ngIf="footer && footer.length > 0" class="flex flex-col flex-1">
-            <div *ngFor="let item of footer" class="flex justify-center items-center">
+        <div class="flex flex-col flex-1">
+            @for(item of footer; track item){" 
+            <div class="flex justify-center items-center">
                 <img [src]="item.url" class="size-28" alt="logo">
             </div>
+            }
             <div class="flex flex-row justify-center items-center gap-5 mt-3 text-lg">
                 <a href="https://www.instagram.com/isft232_oficial/" target="_blank" class="bg-[#154677] py-1 px-[10px] rounded-full text-white hover:opacity-95"><fa-icon [icon]="faInstagram"></fa-icon></a>
                 <a href="https://www.facebook.com/p/ISFT-232-100082128423838/" target="_blank" class="bg-[#154677] py-1 px-[10px] rounded-full text-white hover:opacity-95"><fa-icon [icon]="faFacebook"></fa-icon></a>
