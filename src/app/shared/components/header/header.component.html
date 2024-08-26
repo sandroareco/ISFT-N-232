@@ -1,0 +1,53 @@
+<nav class="absolute top-0 left-0 right-0 z-20">
+    <div class="container flex flex-wrap mx-auto sm:flex sm:justify-around sm:items-center">
+        <a routerLink="home" class="inline-flex p-1">
+            <img src="/assets/Logo232.webp" alt="Logo" class="w-[60px] h-[60px]">
+        </a>
+        <button class="pr-3 sm:hidden inline-flex items-center justify-center text-white my-3 ml-auto text-sm"
+        (click)="toggleNavbar()">
+            <i [ngClass]="navbarOpen ? 'bi bi-x-lg' : 'bi bi-list'"></i>
+        </button>
+        <div class="bg-slate-800 sm:bg-transparent w-full sm:inline-flex sm:w-auto my-2 sm:mt-2" [ngClass]="{'hidden': !navbarOpen, 'flex': navbarOpen}">
+            <ul class="w-full sm:w-auto flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 text-white hover:cursor-pointer">
+                <li>
+                    <a routerLink="/institucional" class="flex px-4 py-2 text-sm hover:text-slate-200">Institucional</a>
+                </li>
+                <li>
+                    <a routerLink="/ingreso" class="flex px-4 py-2 text-sm hover:text-slate-200">Ingreso</a>
+                </li>
+                <li>
+                    <a routerLink="/alumnos" class="flex px-4 py-2 text-sm hover:text-slate-200">Alumnos</a>
+                </li>
+                <li class="relative w-full">
+                    <button class="w-full flex gap-1 px-4 py-2 text-sm hover:text-slate-200"
+                    (click)="toggleSubmenu()">
+                        Tecnicaturas <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <!--submenu-->
+                    <div class="sm:absolute sm:mt-1 text-sm bg-white right-0 rounded-md p-2" [ngClass]="{'hidden': !navbarSubmenu, 'flex': navbarSubmenu}">
+                        <ul class="space-y-2 sm:w-48">
+                            <li>
+                                <a routerLink="/desarrollo-de-software" class="flex p-2 text-slate-800 rounded-md hover:bg-gray-100 hover:text-black">Desarrollo de software</a>
+                            </li>
+                            <li>
+                                <a routerLink="/seguridad-e-higiene" class="flex p-2 text-slate-800 rounded-md hover:bg-gray-100 hover:text-black">Seguridad e higiene</a>
+                            </li>
+                            <li>
+                                <a routerLink="/diseño-productos-mecanicos" class="flex p-2 text-slate-800 rounded-md hover:bg-gray-100 hover:text-black">Diseño productos mecanicos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/biblioteca" class="flex px-4 py-2 text-sm hover:text-slate-200">Biblioteca</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hidden lg:flex text-white gap-3">
+            <a href="https://www.instagram.com/isft232_oficial/" target="_blank" class="hover:text-slate-200"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/p/ISFT-232-100082128423838/" target="_blank" class="hover:text-slate-200"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/@isft232" target="_blank" class="hover:text-slate-200"> <i class="bi bi-youtube"></i></a>
+        </div>
+    </div>
+</nav>
+
