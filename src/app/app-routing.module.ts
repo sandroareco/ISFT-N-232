@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./isft232/isft232.module').then(m => m.Isft232Module),
   },
   {
-    path: '',
+    path: '**',
     redirectTo: '',
     pathMatch: 'full'
   }

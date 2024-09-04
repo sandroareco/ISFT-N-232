@@ -4,7 +4,7 @@
     *ngFor="let items of productos_mecanicos">
         <div class="grid max-w-screen-xl py-8 mx-auto lg:gap-8 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="text-xl mb-2 font-semibold text-white">
+                <h1 class="text-xl sm:text-3xl mb-2 font-semibold text-white">
                   {{ items.title }}
                 </h1>
                 <p class="max-w-2xl mb-3 text-slate-200 lg:mb-8 md:text-lg lg:text-base">
@@ -14,16 +14,6 @@
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <img [src]="items.url" [alt]="items.title" class="object-cover w-[350px] h-[350px] rounded-lg">
             </div>                
-        </div>
-        <div class="text-center">
-            <a href="{{items.url_inscription}}" target="_blank" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                Formulario de Preinscripción
-            </a>
-        </div>
-        <div class="w-full lg:block lg:w-1/2 text-center my-10 bg-blue-900 p-2 rounded mx-auto">
-            <p class="text-center text-white uppercase whitespace-pre-line">
-                {{items.info_inscription}}
-            </p>
         </div>
 
         <article class="border-t-2 border-t-slate-100 border-b-2 border-b-blue-900">
@@ -69,24 +59,6 @@
                     <li>{{ items.info_perfil_req_5}}</li>
                 </ul>
             </dl>
-        </article>
-
-        <article class="border-b-2 border-b-blue-900">
-            <div class="mt-10 mb-2">
-                <h2 class="text-xl text-white font-semibold">
-                    {{ items.title_requisitos }}
-                </h2>
-            </div>
-            <div class="mb-6">
-                <ul class="text-slate-200">
-                    <li>{{items.info_req_1}}</li>
-                    <li>{{items.info_req_2}}</li>
-                    <li>{{items.info_req_3}}</li>
-                    <li>{{items.info_req_4}}</li>
-                    <li>{{items.info_req_5}}</li>
-                    <li>{{items.info_req_6}}</li>
-                </ul>
-            </div>
         </article>
 
         <article class="border-b-2 border-b-slate-100">

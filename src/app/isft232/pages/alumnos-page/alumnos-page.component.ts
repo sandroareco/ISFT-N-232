@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'isft-alumnos-page',
   templateUrl: './alumnos-page.component.html'
 })
-export class AlumnosPageComponent {
-
-}
+export class AlumnosPageComponent {}

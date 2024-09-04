@@ -1,2 +1,34 @@
 <shared-header></shared-header>
+
+<article
+    *ngFor="let items of ingreso"
+    class="pt-14 px-6 sm:px-36">
+    <div class="pt-10 pb-4">
+        <h2 class="text-3xl text-white font-semibold text-center">
+            {{ items.title_requisitos }}
+        </h2>
+    </div>
+    <div class="mb-6">
+        <ul class="text-slate-200">
+            <li>{{items.info_req_1}}</li>
+            <li>{{items.info_req_2}}</li>
+            <li>{{items.info_req_3}}</li>
+            <li>{{items.info_req_4}}</li>
+            <li>{{items.info_req_5}}</li>
+            <li>{{items.info_req_6}}</li>
+        </ul>
+    </div>
+
+    <div class="text-center">
+        <a href="{{items.url_inscription}}" target="_blank" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+            Formulario de Preinscripción
+        </a>
+    </div>
+    <div class="w-full lg:block lg:w-1/2 text-center my-10 bg-blue-900 p-2 rounded mx-auto">
+        <p class="text-center text-white uppercase whitespace-pre-line">
+            {{items.info_inscription}}
+        </p>
+    </div>
+</article>
+
 <shared-footer></shared-footer>

@@ -1,0 +1,13 @@
+<main class="pt-24 pb-4 text-white">
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+        <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+            <header class="mb-4 lg:mb-6 not-format">
+                <h1 class="mb-4 text-3xl font-extrabold leading-tight lg:mb-6 lg:text-4xl">{{ item.title }}</h1>
+            </header>
+            <p class="my-10">{{ item.description }}</p>
+            <figure>
+                <img src="{{ item.url }}" alt="{{ item.title }}">
+            </figure>
+        </article>
+    </div>
+</main>

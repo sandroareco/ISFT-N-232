@@ -17,11 +17,6 @@ export class ProductosMecanicosPageComponent {
           siendo capaz de gestionar todo el proceso productivo aplicando normas de seguridad, de cuidados del medio ambiente y aplicando las herramientas del campo digital. 
           Selecciona los equipos y máquinas que intervendrán en el proceso de fabricación y diseña el herramental para la producción, generando prototipos operando básicamente máquinas comandadas a Control Numérico Computarizado e impresoras 3D. 
           Además, opera software de diseño y simuladores.`,
-      url_inscription: "https://docs.google.com/forms/d/e/1FAIpQLSckdc1B_7mdMYMFK3Zc7XEmid4omMR3l9kkZ2g8X76y_fZ3ag/closedform",
-      info_inscription: `Inscripción definitiva para el ciclo 2025
-                      11 y 12 de Diciembre de 2024
-                      en nuestra sede de Junín y Tomás Guido, Burzaco,
-                      en el horario de 17:30 a 20:30 horas`,
       title_obt:'Título que se obtiene',
       title_obt_second:'Tecnicatura Superior en Diseño y Desarrollo de productos Mecánicos',
       info_primary:'Esta carrera está aprobada por la resolución 2727/2022',
@@ -38,13 +33,6 @@ export class ProductosMecanicosPageComponent {
       info_perfil_req_3:'-Asumir el rol de liderazgo, coordinación y supervisión, reconociendo el rol de cada integrante del proyecto, transmitiendo la información necesaria en forma precisa y utilizando el lenguaje apropiado para el entendimiento mutuo en interacciones individuales o grupales.',
       info_perfil_req_4:'-Promover en su ámbito de trabajo, la realización de tareas de manera equitativa sin discriminación entre los géneros.',
       info_perfil_req_5:'-Documentar todas las etapas de su tarea como así también las especificaciones de los productos que puedan surgir de su trabajo, referenciando y registrando de tal manera que le facilite acceder posteriormente en forma rápida para recuperarla y/o evaluarla.',
-      title_requisitos: 'Requisitos de Ingreso',
-      info_req_1: 'Carpeta 3 solapas azul',
-      info_req_2: 'Completar la Ficha de Inscripción',
-      info_req_3: '2 fotos 4 cm x 4 cm.',
-      info_req_4: 'Presentar fotocopia del título secundario y exhibir el original. También se acepta la fotocopia y/o la constancia de título en trámite.',
-      info_req_5: 'Presentar fotocopia del DNI anverso - reverso y exhibir el original.',
-      info_req_6: 'Presentar fotocopia de la partida de nacimiento.',
       title_plan_est:'Plan de Estudios',
       info_plan_est:`Esta carrera se encuentra destinada a todos los interesados en adquirir saberes vinculados al entorno del diseño y el desarrollo de productos mecáncios, no requiriendo que tengan conocimientos técnicos previos para su cursada`,
       title_materias:'1º año',

@@ -16,11 +16,6 @@ export class DesarrolloSoftwarePageComponent {
       Las habilidades adquiridas por un desarrollador de Software son muy bien valoradas y requeridas por todo tipo de empresas comerciales, industriales y de servicios, como así también organizaciones no gubernamentales y entidades públicas.
       Esta Tecnicatura provee los conocimientos teóricos prácticos necesarios que permitirán diseñar software con el fin de satisfacer requerimientos de proyectos y abordar soluciones a las variadas problemáticas de las organizaciones.
       Base de datos, Algoritmos, Programación, Diseño Web, Sistemas operativos, HTML, Ingeniería de Software, Aplicaciones móviles, Sistemas Digitales, Estadística, Lógica, Laboratorio de Hardware.`,
-      url_inscription: "https://docs.google.com/forms/d/e/1FAIpQLSd4LgYgWpHcw5cHXbVMvohaEKIxTSsurYw9vH5ki88e2F8Y8Q/viewform",
-      info_inscription: `Inscripción definitiva para el ciclo 2025 
-                        13 y 14 de Diciembre de 2024
-                        en nuestra sede de Junín y Tomás Guido, Burzaco,
-                        en el horario de 17:30 a 20:30 horas`,
       title_obt:'Título que se obtiene',
       title_obt_second:'Tecnicatura Superior en Desarrollo de Software',
       info_primary:'Esta carrera está aprobada por la resolución 5847/19.',
@@ -34,13 +29,6 @@ export class DesarrolloSoftwarePageComponent {
                   También es una excelente carrera para que administradores y personal de oficina puedan construir programas y rutinas de automatización 
                   vinculadas con su tarea diaria en la operatoria del procesamiento de datos y que construyan procedimientos en el entorno organizacional para 
                   favorecer a procesos administrativos en el manejo de la información con la finalidad de tomar decisiones de alcance ejecutivo.`,
-      title_requisitos: 'Requisitos de Ingreso',
-      info_req_1: 'Carpeta 3 solapas azul',
-      info_req_2: 'Completar la Ficha de Inscripción',
-      info_req_3: '2 fotos 4 cm x 4 cm.',
-      info_req_4: 'Presentar fotocopia del título secundario y exhibir el original. También se acepta la fotocopia y/o la constancia de título en trámite.',
-      info_req_5: 'Presentar fotocopia del DNI anverso - reverso y exhibir el original.',
-      info_req_6: 'Presentar fotocopia de la partida de nacimiento.',
       title_plan_est:'Plan de Estudios',
       info_plan_est:`Esta carrera se encuentra destinada a todos los interesados en adquirir saberes vinculados al entorno de la programación 
       y creación de software de propósito general, no requiriendo que tengan conocimientos técnicos previos para su cursada.`,

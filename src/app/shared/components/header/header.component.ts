@@ -2,19 +2,31 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'shared-header',
-  templateUrl: './header.component.html',
-  styles: ``
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent {
 
   navbarOpen = false;
-  navbarSubmenu = false;
+  navbarSubmenuInstitucional = false;
+  navbarSubmenuTecnicaturas = false;
   
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  toggleSubmenu(){
-    this.navbarSubmenu = !this.navbarSubmenu;
+  toggleSubmenuInstitucional() {
+    this.navbarSubmenuInstitucional = !this.navbarSubmenuInstitucional;
+    // Cerrar el otro submenu si está abierto
+    if (this.navbarSubmenuTecnicaturas) {
+      this.navbarSubmenuTecnicaturas = false;
+    }
+  }
+
+  toggleSubmenuTecnicaturas() {
+    this.navbarSubmenuTecnicaturas = !this.navbarSubmenuTecnicaturas;
+    // Cerrar el otro submenu si está abierto
+    if (this.navbarSubmenuInstitucional) {
+      this.navbarSubmenuInstitucional = false;
+    }
   }
 }
