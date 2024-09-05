@@ -9,10 +9,8 @@ export class IngresoPageComponent {
   public ingreso: Tecnicaturas[] = [
     {
       url_inscription: "https://docs.google.com/forms/d/e/1FAIpQLSd4LgYgWpHcw5cHXbVMvohaEKIxTSsurYw9vH5ki88e2F8Y8Q/viewform",
-      info_inscription: `Inscripción definitiva para el ciclo 2025 
-                        13 y 14 de Diciembre de 2024
-                        en nuestra sede de Junín y Tomás Guido, Burzaco,
-                        en el horario de 17:30 a 20:30 horas`,
+      info_inscription: `La información sobre la inscripción definitiva para el 
+      ciclo 2025 será comunicada a través de nuestras redes sociales.`,
       title_requisitos: 'Requisitos de Ingreso',
       info_req_1: 'Carpeta 3 solapas azul',
       info_req_2: 'Completar la Ficha de Inscripción',

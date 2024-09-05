@@ -1,88 +1,92 @@
 <shared-header></shared-header>
-<main class="px-6 lg:px-36 pt-14 appearance">
-    <section
-        *ngFor="let items of desarrollo_software">
-        <div class="grid max-w-screen-xl py-8 mx-auto lg:gap-8 lg:grid-cols-12">
-            <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="text-xl sm:text-3xl mb-2 font-semibold text-white">
-                  {{ items.title }}
-                </h1>
-                <p class="max-w-2xl mb-3 text-slate-200 lg:mb-8 md:text-lg lg:text-base">
-                  {{ items.description_one }}
-                </p>
-            </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img [src]="items.url" [alt]="items.title" class="w-[350px] h-[350px] rounded-lg">
-            </div>                
+<main 
+*ngFor="let items of desarrollo_software">
+
+    <div class="h-screen w-full relative">
+        <div class="h-full w-full">
+            <img [src]="items.url" [alt]="items.title" class="h-full w-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
+        <div class="ps-4 sm:ps-0 absolute inset-0 flex justify-center items-center text-white">
+            <h1 class="text-5xl font-semibold"> {{ items.title }}</h1>
+        </div>
+    </div>
 
-        <article class="border-t-2 border-t-slate-100 border-b-2 border-b-blue-900">
-            <div class="mt-10 mb-2">
-                <h2 class="text-xl text-white font-semibold">
-                    {{ items.title_obt }}
-                </h2>
-            </div>
-            <dl>
-                <dt class="text-blue-500 text-lg">{{items.title_obt_second}}</dt>
-                <dd>{{items.info_primary}}</dd>
-                <dd class="text-slate-200 font-semibold mb-6">{{items.info_second}}</dd>
-            </dl>
-        </article>
+    <section class="flex flex-col justify-center items-center py-6 px-2 sm:px-0">
+        <div class="sm:w-[500px] flex flex-col gap-2 sm:text-sm text-white">
 
-        <article class="border-b-2 border-b-blue-900">
-            <div class="mt-10 mb-2">
-                <h2 class="text-xl text-white font-semibold">
-                    {{ items.title_perfil }}
-                </h2>
+            <div class="pb-2">
+                <p>{{ items.description_one }}</p>              
             </div>
-            <dl>
-                <dd class="mb-6 text-slate-200">{{items.info_perfil}}</dd>
-            </dl>
-        </article>
-
-        <article class="border-b-2 border-b-slate-100">
-            <div class="mt-10 mb-2">
-                <h2 class="text-xl text-white font-semibold">
-                    {{ items.title_plan_est }}
-                </h2>
-            </div>
-            <dl class="mb-4">
-                <dd class="text-slate-200">{{items.info_plan_est}}</dd>
-            </dl>
-            <div class="mb-6">
-                <h3 class="font-semibold text-white mb-4">{{items.title_materias}}</h3>
-                <ul class="mb-4 text-slate-200">
-                    <li>{{items.info_materias_1}}</li>
-                    <li>{{items.info_materias_2}}</li>
-                    <li>{{items.info_materias_3}}</li>
-                    <li>{{items.info_materias_4}}</li>
-                    <li>{{items.info_materias_5}}</li>
-                    <li>{{items.info_materias_6}}</li>
-                    <li>{{items.info_materias_7}}</li>
-                    <li>{{items.info_materias_8}}</li>
-                </ul>
-                <h3 class="text-white font-semibold mb-4">{{items.title_materias_2}}</h3>
-                <ul class="text-slate-200 mb-4">
-                    <li>{{items.info_materias_seg_1}}</li>
-                    <li>{{items.info_materias_seg_2}}</li>
-                    <li>{{items.info_materias_seg_3}}</li>
-                    <li>{{items.info_materias_seg_4}}</li>
-                    <li>{{items.info_materias_seg_5}}</li>
-                    <li>{{items.info_materias_seg_6}}</li>
-                    <li>{{items.info_materias_seg_7}}</li>
-                    <li>{{items.info_materias_seg_8}}</li>
-                </ul>
-                <h3 class="text-white font-semibold mb-4">{{items.title_materias_3}}</h3>
-                <ul class="text-slate-200">
-                    <li>{{items.info_materias_ter_1}}</li>
-                    <li>{{items.info_materias_ter_2}}</li>
-                    <li>{{items.info_materias_ter_3}}</li>
-                    <li>{{items.info_materias_ter_4}}</li>
-                    <li>{{items.info_materias_ter_5}}</li>
-                    <li>{{items.info_materias_ter_6}}</li>
-                </ul>
-            </div>
-        </article>
+    
+            <article class="border-t-2 border-t-slate-100 border-b-2 border-b-blue-500">
+                <div class="mt-10 mb-2">
+                    <h2 class="font-semibold">
+                        {{ items.title_obt }}
+                    </h2>
+                </div>
+                <dl>
+                    <dt class="text-lg font-semibold">{{items.title_obt_second}}</dt>
+                    <dd class="mb-6">{{items.info_primary}}</dd>
+                    <dd class="mb-6">{{items.info_second}}</dd>
+                </dl>
+            </article>
+    
+            <article class="border-b-2 border-b-blue-500">
+                <div class="mt-10 mb-2">
+                    <h2 class="font-semibold">
+                        {{ items.title_perfil }}
+                    </h2>
+                </div>
+                <dl>
+                    <dd class="mb-6">{{items.info_perfil}}</dd>
+                </dl>
+            </article>
+    
+            <article class="border-b-2 border-b-slate-100">
+                <div class="mt-10 mb-2">
+                    <h2 class="font-semibold">
+                        {{ items.title_plan_est }}
+                    </h2>
+                </div>
+                <dl class="mb-4">
+                    <dd>{{items.info_plan_est}}</dd>
+                </dl>
+                <div class="mb-6">
+                    <h3 class="font-semibold mb-4">{{items.title_materias}}</h3>
+                    <ul class="mb-4">
+                        <li>{{items.info_materias_1}}</li>
+                        <li>{{items.info_materias_2}}</li>
+                        <li>{{items.info_materias_3}}</li>
+                        <li>{{items.info_materias_4}}</li>
+                        <li>{{items.info_materias_5}}</li>
+                        <li>{{items.info_materias_6}}</li>
+                        <li>{{items.info_materias_7}}</li>
+                        <li>{{items.info_materias_8}}</li>
+                    </ul>
+                    <h3 class="font-semibold mb-4">{{items.title_materias_2}}</h3>
+                    <ul class="mb-4">
+                        <li>{{items.info_materias_seg_1}}</li>
+                        <li>{{items.info_materias_seg_2}}</li>
+                        <li>{{items.info_materias_seg_3}}</li>
+                        <li>{{items.info_materias_seg_4}}</li>
+                        <li>{{items.info_materias_seg_5}}</li>
+                        <li>{{items.info_materias_seg_6}}</li>
+                        <li>{{items.info_materias_seg_7}}</li>
+                        <li>{{items.info_materias_seg_8}}</li>
+                    </ul>
+                    <h3 class="font-semibold mb-4">{{items.title_materias_3}}</h3>
+                    <ul>
+                        <li>{{items.info_materias_ter_1}}</li>
+                        <li>{{items.info_materias_ter_2}}</li>
+                        <li>{{items.info_materias_ter_3}}</li>
+                        <li>{{items.info_materias_ter_4}}</li>
+                        <li>{{items.info_materias_ter_5}}</li>
+                        <li>{{items.info_materias_ter_6}}</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
     </section>
 </main>
 <shared-footer></shared-footer>

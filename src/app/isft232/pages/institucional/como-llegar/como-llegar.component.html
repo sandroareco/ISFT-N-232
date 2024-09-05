@@ -5,20 +5,22 @@
         <h1 class="text-white pt-10 text-3xl font-bold">Cómo llegar</h1>
         <img src="assets/como-llegar.png" alt="como llegar" class="w-[350px] h-[200px] sm:w-[500px] sm:h-[300px]">
     </section>
-    <section *ngFor="let item of comoLlegar" class="pt-10 flex flex-col px-6 sm:px-28 gap-4 text-white">
-        <h2 class="text-2xl font-bold">{{item.title_one}}</h2>
-        <ul class="flex flex-col gap-4">
-            <li>{{item.text_one}}</li>
-            <li>{{item.text_two}}</li>
-            <li>{{item.text_three}}</li>
-        </ul>
-        <h2 class="text-2xl font-bold">{{item.title_two}}</h2>
-        <ul class="flex flex-col gap-4">
-            <li>{{item.text_two_one}}</li>
-            <li>{{item.text_two_two}}</li>
-            <li>{{item.text_two_three}}</li>
-            <li>{{item.text_two_four}}</li>
-        </ul>
+    <section *ngFor="let item of comoLlegar" class="pt-10 flex flex-col justify-center items-center px-2 gap-4 text-white">
+        <div class="sm:w-[500px] flex flex-col gap-4 text-lg sm:text-sm">
+            <div class="flex flex-col gap-4">
+                <h2 class="text-2xl font-bold">{{item.title_one}}</h2>
+                <p>{{item.text_one}}</p>
+                <p>{{item.text_two}}</p>
+                <p>{{item.text_three}}</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h2 class="text-2xl font-bold">{{item.title_two}}</h2>
+                <p>{{item.text_two_one}}</p>
+                <p>{{item.text_two_two}}</p>
+                <p>{{item.text_two_three}}</p>
+                <p>{{item.text_two_four}}</p>
+            </div>
+        </div>
     </section>
 </main>
 

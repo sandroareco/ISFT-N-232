@@ -68,4 +68,20 @@ export class ProductosMecanicosPageComponent {
     }
   ]
 
+  splitTitle(item: Tecnicaturas) {
+    if (!item.title) {
+      return {
+        firstPart: '',
+        secondPart: ''
+      };
+    }
+    
+    const words = item.title.split(' ');
+    return {
+      firstPart: words.slice(0, 6).join(' '),
+      secondPart: words.slice(6).join(' ')
+    };
+  }
+  
+
 }
