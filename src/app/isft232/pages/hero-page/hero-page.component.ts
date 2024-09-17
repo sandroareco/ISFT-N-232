@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'isft-hero-page',
   templateUrl: './hero-page.component.html'
 })
-export class HeroPageComponent {
 
+export class HeroPageComponent {
+  
 }

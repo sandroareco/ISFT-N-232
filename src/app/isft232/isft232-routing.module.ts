@@ -13,6 +13,7 @@ import { SeguridadHigienePageComponent } from './pages/tecnicaturas/seguridad-hi
 import { NovedadesHomeComponent } from './pages/novedades-home/novedades-home.component';
 import { NoticiasPageComponent } from './pages/noticias-page/noticias-page.component';
 import { ComoLLegarComponent } from './pages/institucional/como-llegar/como-llegar.component';
+import { CorrelatividadesComponent } from './pages/alumnos-page/correlatividades/correlatividades.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
         component: AlumnosPageComponent
       },
       {
+        path: 'alumnos/correlatividades',
+        component: CorrelatividadesComponent
+      },
+      {
         path: 'desarrollo-de-software',
         component: DesarrolloSoftwarePageComponent
       },
@@ -48,7 +53,7 @@ const routes: Routes = [
         component: SeguridadHigienePageComponent
       },
       {
-        path: 'diseño-productos-mecanicos',
+        path: 'dis-productos-mecanicos',
         component: ProductosMecanicosPageComponent
       },
       {

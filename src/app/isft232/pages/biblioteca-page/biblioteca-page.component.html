@@ -1,3 +1,32 @@
 <shared-header></shared-header>
+
+<div class="h-screen w-full relative">
+    <div class="h-full w-full">
+        <img src="assets/biblioteca.webp" alt="biblioteca" class="h-full w-full object-cover">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+    <div class="absolute bottom-80 left-6 sm:bottom-56 sm:left-28 text-white" data-aos="fade-zoom-in" data-aos-delay="200">
+        <h1 class="text-5xl font-semibold">Biblioteca</h1>
+    </div>
+</div>
+
+<div *ngFor="let items of biblioteca"
+class="flex flex-col items-center justify-center py-8 px-2">
+    <div class="sm:w-[500px] text-white flex flex-col gap-4 text-lg sm:text-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p>
+          {{items.text_one}}
+        </p>
+        <p>
+          {{items.text_two}}
+        </p>
+        <p>
+            {{items.text_three}}
+        </p>
+        <p>
+            {{items.text_four}}
+        </p>
+    </div>
+  </div>
+
 <shared-footer></shared-footer>
 

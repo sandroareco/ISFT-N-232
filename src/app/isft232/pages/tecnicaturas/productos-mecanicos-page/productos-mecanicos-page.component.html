@@ -7,7 +7,7 @@
             <img [src]="items.url" [alt]="items.title" class="h-full w-full object-cover">
             <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div class="ps-4 sm:ps-0 absolute inset-0 flex justify-center items-center text-white">
+        <div class="absolute bottom-80 left-6 sm:bottom-56 sm:left-28 text-white" data-aos="fade-zoom-in" data-aos-delay="200">
             <h1 class="text-5xl font-semibold">
                 {{ splitTitle(items).firstPart }} <br />
                 {{ splitTitle(items).secondPart }}
@@ -16,7 +16,7 @@
     </div>
 
     <section class="flex flex-col justify-center items-center py-6 px-2 sm:px-0">
-        <div class="sm:w-[500px] flex flex-col gap-2 sm:text-sm text-white">
+        <div class="sm:w-[500px] flex flex-col gap-2 sm:text-sm text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
 
             <div class="pb-2">
                 <p>{{ items.description_one }}</p>              

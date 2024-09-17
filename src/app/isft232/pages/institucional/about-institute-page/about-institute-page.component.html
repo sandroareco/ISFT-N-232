@@ -1,69 +1,45 @@
 <shared-header></shared-header>
-<section>
+<section *ngFor="let items of institucional">
   <div class="h-screen w-full relative">
     <div class="h-full w-full">
       <img
-        src="assets/progresar.webp"
+        src="assets/frente.webp"
         alt="seguridad_e_higiene"
         class="h-full w-full object-cover"
       />
       <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
-    <div class="absolute inset-0 flex justify-center items-center text-white">
-      <h1 class="text-5xl font-semibold">Nuestro Instituto</h1>
+    <div class="absolute bottom-80 left-6 sm:bottom-56 sm:left-28 text-white" data-aos="fade-zoom-in" data-aos-delay="200">
+      <h1 class="text-5xl font-semibold">{{items.title_one}}</h1>
     </div>
   </div>
 
   <div class="flex flex-col items-center justify-center py-8 px-2">
-    <div class="sm:w-[500px] text-white flex flex-col gap-4 text-lg sm:text-sm">
-        <p>Somos el primer Instituto
-        Técnico del Municipio de Alte Brown que ofrece tecnicaturas superiores 
-        de aplicación laboral de alta necesidad en el mercado, las mismas 
-        son presenciales, contamos solo con turno vespertino
-        para que los estudiantes puedan estudiar y trabajar a la vez, todas
-        cuentan con títulos de validéz nacional y el instituto es no arancelado.
-        </p>
-        <p>Nuestras tecnicaturas son innovadoras preparadas para que nuestros/as
-            estudiantes sean lo que el mercado laboral está buscando. Proponemos
-            formar profesionales capaces de adaptarse a los cambios del mundo
-            productivo actual, que contribuyan a aumentar la eficiencia y
-            competitividad de las organizaciones públicas y privadas donde se
-            desempeñe como profesión independiente.
+    <div class="sm:w-[500px] text-white flex flex-col gap-4 text-lg sm:text-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p>
+          {{items.text_one}}
         </p>
         <p>
-            Nuestros/as estudiantes son parte de una educación interactiva,
-            eficiente, flexible, adaptada al mundo digital. Los escuchamos de forma
-            activa ya que nos interesa su curiosidad y ganas de crecer siendo esto
-            el motor que hace que nuestro instituto se adapte para ofrecer la mejor
-            forma de aprender.
+          {{items.text_two}}
         </p>
         <p>
-            La decisión en la elección de las tecnicaturas son pensadas con la
-            Secretaria de Educación de Alte Brown, con empresas, con expertos,
-            especialistas que buscan profesionales preparados para el mundo laboral
-            de hoy y mañana. No solo preparamos al estudiante en teoría, también en
-            el conocimiento práctico ya que desde el primer año de la carrera
-            cuentan con prácticas profesionalizantes.
+            {{items.text_three}}
         </p>
         <p>
-            Nuestra misión es formar profesionales capaces de adaptarse a los
-            cambios del mundo productivo, con perfiles y habilidades necesarias a lo
-            que demande el mercado laboral.
+            {{items.text_four}}
+        </p>
+        <p>
+            {{items.text_five}}
         </p>
       <div>
         <img
-          src="assets/unidad_integral.webp"
+          src="assets/banner.webp"
           alt="ISFTNº232"
         />
       </div>
-      <h2 class="text-3xl font-semibold text-white">Plantel Docente</h2>
+      <h2 class="text-3xl font-semibold text-white">{{items.title_two}}</h2>
       <p>
-        Contamos con un plantel docente altamente capacitado siendo
-        profesionales que cuentan con gran experiencia laboral, y en la
-        actualidad se desarrollan en su campo de conocimiento, lo que nos
-        permite ofrecer un conocimiento actual, moderno y accesible, de
-        constante actualización, que garantiza el aprendizaje y el éxito
-        laboral.
+          {{items.text_two_one}}
       </p>
     </div>
   </div>

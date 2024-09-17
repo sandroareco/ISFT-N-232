@@ -1,0 +1,44 @@
+.active-link {
+    position: relative;
+    color: #f5f5f5;
+}
+
+.active-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 90%;
+    height: 2px;
+    background-color: #f5f5f5; 
+    transform: scaleX(1); 
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.submenu-title {
+    position: relative;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.submenu-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 90%;
+    height: 2px;
+    background-color: #f5f5f5; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul > li > .submenu-title:hover::before {
+    transform: scaleX(1); 
+}
+
+.active-link::before {
+    transform: scaleX(1);
+}

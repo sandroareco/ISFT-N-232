@@ -18,6 +18,8 @@ import { SeguridadHigienePageComponent } from './pages/tecnicaturas/seguridad-hi
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { NoticiasPageComponent } from './pages/noticias-page/noticias-page.component';
 import { ComoLLegarComponent } from './pages/institucional/como-llegar/como-llegar.component';
+import { LogrosInstitucionalesComponent } from './components/logros-institucionales/logros-institucionales.component';
+import { CorrelatividadesComponent } from './pages/alumnos-page/correlatividades/correlatividades.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { ComoLLegarComponent } from './pages/institucional/como-llegar/como-lleg
     ProductosMecanicosPageComponent,
     NoticiasComponent,
     NoticiasPageComponent,
-    ComoLLegarComponent
+    ComoLLegarComponent,
+    LogrosInstitucionalesComponent,
+    CorrelatividadesComponent
   ],
   imports: [
     CommonModule,
