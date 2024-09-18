@@ -7,9 +7,9 @@
             <img [src]="items.url" [alt]="items.title" class="h-full w-full object-cover">
             <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div class="absolute bottom-80 left-6 sm:bottom-56 sm:left-28 text-white" data-aos="fade-zoom-in" data-aos-delay="200">
+        <div class="absolute bottom-56 left-6 sm:left-28 text-white" data-aos="fade-zoom-in" data-aos-delay="200">
             <h1 class="text-5xl font-semibold">
-                {{ splitTitle(items).firstPart }} <br />
+                {{ splitTitle(items).firstPart }} <br/>
                 {{ splitTitle(items).secondPart }}
             </h1>
         </div>
