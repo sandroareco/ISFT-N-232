@@ -3,10 +3,15 @@ import { Tecnicaturas } from '../../../interfaces/tecnicaturas.interface';
 
 @Component({
   selector: 'app-seguridad-higiene-page',
-  templateUrl: './seguridad-higiene-page.component.html',
-  styles: ``
+  templateUrl: './seguridad-higiene-page.component.html'
 })
+
 export class SeguridadHigienePageComponent {
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
   public seguridad_higiene: Tecnicaturas[] = [
     {
       title : 'Tecnicatura Superior en Seguridad e Higiene',

@@ -8,6 +8,12 @@ import { Tecnicaturas } from '../../../interfaces/tecnicaturas.interface';
 })
 export class DesarrolloSoftwarePageComponent {
 
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+
   public desarrollo_software: Tecnicaturas[] = [
     {
       title : 'Tecnicatura Superior en Desarrollo de Software',

@@ -1,4 +1,4 @@
-<shared-header></shared-header>
+<shared-header [showOverlay]="showOverlay" (overlayChange)="toggleOverlay($event)"></shared-header>
 
 <main class="py-20">
     <div data-aos="fade-zoom-in" data-aos-delay="200">
@@ -12,7 +12,7 @@
         </div>
     </div>
     <section *ngFor="let item of comoLlegar" class="pt-6 flex flex-col justify-center items-center px-2 gap-4 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <div class="sm:w-[500px] flex flex-col gap-4 text-lg sm:text-sm">
+        <div class="sm:w-[500px] flex flex-col gap-4 text-lg sm:text-base">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl font-bold">{{item.title_one}}</h2>
                 <p>{{item.text_one}}</p>

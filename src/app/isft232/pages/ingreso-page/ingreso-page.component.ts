@@ -6,6 +6,13 @@ import { Tecnicaturas } from '../../interfaces/tecnicaturas.interface';
   templateUrl: './ingreso-page.component.html'
 })
 export class IngresoPageComponent {
+  
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+
   public ingreso: Tecnicaturas[] = [
     {
       url_inscription: "https://docs.google.com/forms/d/e/1FAIpQLSd4LgYgWpHcw5cHXbVMvohaEKIxTSsurYw9vH5ki88e2F8Y8Q/viewform",

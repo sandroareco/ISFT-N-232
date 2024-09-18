@@ -1,4 +1,4 @@
-<shared-header></shared-header>
+<shared-header [showOverlay]="showOverlay" (overlayChange)="toggleOverlay($event)"></shared-header>
 <main
 *ngFor="let items of seguridad_higiene">
     
@@ -13,7 +13,7 @@
     </div>
 
     <section class="flex flex-col justify-center items-center py-6 px-2 sm:px-0">
-        <div class="sm:w-[500px] flex flex-col gap-2 sm:text-sm text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <div class="sm:w-[500px] flex flex-col gap-2 sm:text-base text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
 
             <div class="pb-2">
                 <p>{{ items.description_one }}</p>              

@@ -1,4 +1,4 @@
-<shared-header></shared-header>
+<shared-header [showOverlay]="showOverlay" (overlayChange)="toggleOverlay($event)"></shared-header>
 
 <div class="h-screen w-full relative">
     <div class="h-full w-full">
@@ -12,7 +12,7 @@
 
 <div *ngFor="let items of biblioteca"
 class="flex flex-col items-center justify-center py-8 px-2">
-    <div class="sm:w-[500px] text-white flex flex-col gap-4 text-lg sm:text-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <div class="sm:w-[500px] text-white flex flex-col gap-4 text-lg sm:text-base" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <p>
           {{items.text_one}}
         </p>

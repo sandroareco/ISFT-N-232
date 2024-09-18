@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './alumnos-page.component.html',
   styleUrl: './alumnos-page.component.css'
 })
-export class AlumnosPageComponent {}
+export class AlumnosPageComponent {
+  
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+
+}

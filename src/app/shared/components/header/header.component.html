@@ -1,5 +1,12 @@
 <header>
   <nav class="absolute top-0 left-0 right-0 z-20">
+
+    <div 
+          *ngIf="navbarOpen && showOverlay" 
+          class="fixed inset-0 bg-black opacity-50 z-10"
+          (click)="closeNavbar()">
+      </div>
+
     <div [ngClass]="isFixed ? 'w-full fixed top-0 left-0 right-0 z-50 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm transition-all ease-in-out duration-300' : ''" class="flex flex-wrap mx-auto sm:flex sm:justify-around sm:items-center">
       <a routerLink="home" class="inline-flex p-1">
         <img src="/assets/Logo232.webp" alt="Logo" class="w-[70px] h-[70px]">
@@ -8,20 +15,20 @@
         <i [ngClass]="navbarOpen ? 'bi bi-x-lg' : 'bi bi-list'"></i>
       </button>
 
-      <div class="bg-stone-800 sm:bg-transparent w-full sm:inline-flex sm:w-auto my-2 sm:mt-2" [ngClass]="{'hidden': !navbarOpen, 'flex': navbarOpen}">
-        <ul class="w-full sm:w-auto flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 text-white hover:cursor-pointer">
+      <div class="bg-stone-800 text-lg sm:text-sm sm:bg-transparent w-full sm:inline-flex sm:w-auto my-2 sm:mt-2" [ngClass]="{'hidden': !navbarOpen, 'flex': navbarOpen}">
+        <ul class="w-full h-full sm:w-auto flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 text-white hover:cursor-pointer">
           
           <li class="relative w-full sm:w-auto"
-              (mouseenter)="showSubmenu('institucional')" 
+              (mouseenter)="showSubmenu('institucional')"
               (mouseleave)="hideSubmenu('institucional')">
 
-            <a class="w-full flex gap-1 px-4 py-2 text-sm submenu-title"
+            <a class="w-full flex gap-1 px-4 py-2 submenu-title"
               [ngClass]="{'active-link': isActiveSubmenu('institucional') }"
               routerLinkActive="/institucional">
               Institucional <i class="bi bi-chevron-down"></i>
             </a>
 
-            <div class="sm:absolute sm:pt-1 text-sm bg-stone-800 left-0 rounded-md p-2" 
+            <div class="sm:absolute sm:pt-1 bg-stone-800 left-0 rounded-md p-2" 
                 [ngClass]="{'hidden': !navbarSubmenuInstitucional, 'flex': navbarSubmenuInstitucional}">
               <ul class="space-y-2 sm:w-40">
                 <li>
@@ -35,23 +42,23 @@
           </li>
 
           <li>
-            <a routerLink="/ingreso" routerLinkActive="active-link" class="flex px-4 py-2 text-sm submenu-title">Ingreso</a>
+            <a routerLink="/ingreso" routerLinkActive="active-link" class="flex px-4 py-2 submenu-title">Ingreso</a>
           </li>
           <li>
-            <a routerLink="/alumnos" routerLinkActive="active-link" class="flex px-4 py-2 text-sm submenu-title">Alumnos</a>
+            <a routerLink="/alumnos" routerLinkActive="active-link" class="flex px-4 py-2 submenu-title">Alumnos</a>
           </li>
 
           <li class="relative w-full sm:w-auto"
               (mouseenter)="showSubmenu('tecnicaturas')" 
               (mouseleave)="hideSubmenu('tecnicaturas')">
 
-            <a class="w-full flex gap-1 px-4 py-2 text-sm submenu-title"
+            <a class="w-full flex gap-1 px-4 py-2 submenu-title"
               [ngClass]="{'active-link': isActiveSubmenu('tecnicaturas')}"
               routerLinkActive="/tecnicaturas">
               Tecnicaturas <i class="bi bi-chevron-down"></i>
             </a>
 
-            <div class="sm:absolute sm:pt-1 text-sm bg-stone-800 left-0 rounded-md p-2"
+            <div class="sm:absolute sm:pt-1 bg-stone-800 left-0 rounded-md p-2"
                 [ngClass]="{'hidden': !navbarSubmenuTecnicaturas, 'flex': navbarSubmenuTecnicaturas}">
               <ul class="space-y-2 sm:w-40">
                 <li>
@@ -68,7 +75,7 @@
           </li>
 
           <li>
-            <a routerLink="/biblioteca" routerLinkActive="active-link" class="flex px-4 py-2 text-sm submenu-title">Biblioteca</a>
+            <a routerLink="/biblioteca" routerLinkActive="active-link" class="flex px-4 py-2 submenu-title">Biblioteca</a>
           </li>
         </ul>
       </div>

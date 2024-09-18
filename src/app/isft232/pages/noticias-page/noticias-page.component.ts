@@ -8,6 +8,11 @@ import { NoticiasService } from '../../service/noticias.service';
   templateUrl: './noticias-page.component.html'
 })
 export class NoticiasPageComponent implements OnInit {
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
   
   public selectedNotice?: Notice;
   

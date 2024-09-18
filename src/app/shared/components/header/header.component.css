@@ -42,3 +42,4 @@ ul > li > .submenu-title:hover::before {
 .active-link::before {
     transform: scaleX(1);
 }
+

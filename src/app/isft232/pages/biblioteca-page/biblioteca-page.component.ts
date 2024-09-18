@@ -8,6 +8,12 @@ import { Institucional } from '../../interfaces/institucional.interface';
 
 export class BibliotecaPageComponent {
 
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+
   public biblioteca: Institucional[] = [{
     text_one:`En la biblioteca vas a poder encontrar tanto material correspondiente a las tecnicaturas, 
     como asi también libros de literatura.`,

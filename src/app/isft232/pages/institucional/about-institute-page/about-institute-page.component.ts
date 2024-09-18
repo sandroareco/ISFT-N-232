@@ -6,6 +6,13 @@ import { Institucional } from '../../../interfaces/institucional.interface';
   templateUrl: './about-institute-page.component.html'
 })
 export class AboutInstitutePageComponent {
+  
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+  
   public institucional: Institucional[] = [
     {
       title_one: "Nuestro Instituto",

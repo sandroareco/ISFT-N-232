@@ -7,6 +7,12 @@ import { ComoLlegar } from '../../../interfaces/comoLlegar.interface';
 })
 export class ComoLLegarComponent {
 
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+
   public comoLlegar: ComoLlegar[] = [
     {
       title_one: "En vehiculo",

@@ -1,4 +1,4 @@
-<shared-header></shared-header>
+<shared-header [showOverlay]="showOverlay" (overlayChange)="toggleOverlay($event)"></shared-header>
 
 <main
     *ngFor="let items of ingreso">
@@ -19,7 +19,7 @@
                 {{ items.title_requisitos }}
             </h2>
 
-            <ul class="text-white sm:text-sm flex flex-col gap-2">
+            <ul class="text-white sm:text-base flex flex-col gap-2">
                 <li>{{items.info_req_1}}</li>
                 <li>{{items.info_req_2}}</li>
                 <li>{{items.info_req_3}}</li>

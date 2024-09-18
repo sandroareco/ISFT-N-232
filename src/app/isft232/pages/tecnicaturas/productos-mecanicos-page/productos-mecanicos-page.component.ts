@@ -3,10 +3,15 @@ import { Tecnicaturas } from '../../../interfaces/tecnicaturas.interface';
 
 @Component({
   selector: 'app-productos-mecanicos-page',
-  templateUrl: './productos-mecanicos-page.component.html',
-  styles: ``
+  templateUrl: './productos-mecanicos-page.component.html'
 })
 export class ProductosMecanicosPageComponent {
+
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
 
   public productos_mecanicos: Tecnicaturas[] = [
     {

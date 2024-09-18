@@ -1,4 +1,5 @@
-<shared-header data-aos="fade-zoom-in" data-aos-delay="300"></shared-header>
+<shared-header data-aos="fade-zoom-in" data-aos-delay="300"
+[showOverlay]="showOverlay" (overlayChange)="toggleOverlay($event)"></shared-header>
 
 <components-noticias *ngIf="selectedNotice" [item]="selectedNotice"
 data-aos="fade-zoom-in" data-aos-delay="300"></components-noticias>

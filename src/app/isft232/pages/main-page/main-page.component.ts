@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
+
 }

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './correlatividades.component.css'
 })
 export class CorrelatividadesComponent {
+  
+  showOverlay: boolean = false;
+
+  toggleOverlay(show: boolean) {
+    this.showOverlay = show;
+  }
 
 }
